@@ -635,9 +635,9 @@ body.final .conf { display: none; }
 }
 
 /* ===== versao em espanhol: a pagina so aparece depois de traduzida (sem piscar em portugues) ===== */
-html.es body { opacity: 0; }
-html.es.pronto body { opacity: 1; transition: opacity .2s ease; }
-@media (max-width: 760px) { html[lang="es"] .nav-dias:not(.nav-espacos)::before { content: "Días"; } }
+html.trad body { opacity: 0; }
+html.trad.pronto body { opacity: 1; transition: opacity .2s ease; }
+@media (max-width: 760px) { html[lang="es"] .nav-dias:not(.nav-espacos)::before { content: "Días"; } html[lang="en"] .nav-dias:not(.nav-espacos)::before { content: "Days"; } }
 
 /* seletor PT | ES no topo, no menu do celular e no rodape */
 .topo-dir { display: flex; align-items: center; gap: 18px; }

@@ -49,17 +49,24 @@ Depois de mudar qualquer arquivo, troque o número `?v=` (ex.: `20261111c`) nos 
 
 ## Versão em espanhol
 
-- Aparece sozinha quando o navegador da pessoa está em espanhol (Argentina, Uruguai, Paraguai...). Português e outros idiomas veem em português.
+- Aparece sozinha quando o navegador da pessoa está em espanhol (Argentina, Uruguai, Paraguai...).
 - A pessoa pode trocar no seletor **PT | ES** (topo no computador, menu no celular e rodapé). A escolha fica salva e segue nas outras páginas.
 - Link direto em espanhol: qualquer página com `?lang=es` (ex.: `index.html?lang=es`, `roteiro.html?dias=3&lang=es`). Bom para anúncio no Uruguai ou na Argentina.
 - **Onde editar:** textos fixos das páginas ficam no próprio HTML, no atributo `data-es="..."` ao lado do texto em português. Roteiros, lugares, página da pousada e frases do site ficam em `es.js`.
 - Ao mudar um texto em português, mude também a versão em espanhol. Lugar ou espaço novo sem tradução em `es.js` aparece em português.
 - No espanhol a pousada fala de "habitaciones" (quarto de hotel em espanhol) e "posada".
 
+## Versão em inglês
+
+- Aparece sozinha quando o navegador está em inglês ou em outra língua que não seja português nem espanhol (alemão, francês...), **desde que a pessoa esteja fora do Brasil** (pelo fuso horário). Brasileiro com celular em inglês continua vendo em português.
+- Seletor **PT | ES | EN** no topo, no menu do celular e no rodapé. Link direto: qualquer página com `?lang=en`.
+- **Onde editar:** textos fixos no HTML, no atributo `data-en="..."`; roteiros, lugares, página da pousada e frases do site em `en.js`; nomes e legendas dos pontos turísticos em `pontos.js` (terceira posição).
+- No inglês a pousada é "the inn" e os apartamentos são "rooms" ("apartment" em inglês é imóvel de aluguel). Café = "the best breakfast in the region". Som e Luz = "Sound and Light Show".
+
 ## Página dos pontos turísticos (`pontos.html`)
 
 - Um cartão por ponto no topo (índice) e, abaixo, uma parte para cada ponto com texto, etiquetas, "aparece nos roteiros de" e galeria.
-- **Onde editar:** `pontos.js` (grupo, nome em português e espanhol, etiquetas e fotos com legenda). Cidade e texto vêm do `roteiros.js`, pelo mesmo id do lugar.
+- **Onde editar:** `pontos.js` (grupo, nome em português, espanhol e inglês, etiquetas e fotos com legenda). Cidade e texto vêm do `roteiros.js`, pelo mesmo id do lugar.
 - Nas páginas de roteiro, cada passeio que tem página própria ganha o link "Saiba mais sobre este ponto".
 - Fotos extras dos pontos ficam em `img/pontos/`. Galeria fecha certinho com 1, 2, 3, 5 ou 9 fotos.
 

@@ -1,8 +1,8 @@
 /*
   PONTOS TURISTICOS (pagina pontos.html)
   O texto e a cidade de cada ponto vem do roteiros.js (L), pelo mesmo id. Assim, mudou o texto la, muda aqui tambem.
-  Aqui ficam: grupo ('sm' = em Sao Miguel, 'regiao' = pela regiao), nome na pagina [portugues, espanhol],
-  etiquetas (itens) e fotos [arquivo, legenda em portugues, legenda em espanhol]. A primeira foto abre a galeria.
+  Aqui ficam: grupo ('sm' = em Sao Miguel, 'regiao' = pela regiao), nome na pagina [portugues, espanhol, ingles],
+  etiquetas (itens) e fotos [arquivo, legenda em portugues, legenda em espanhol, legenda em ingles]. A primeira foto abre a galeria.
   capa = foto da capa rotativa do topo (horizontal e grande); sem capa, usa a primeira foto.
   Galeria fecha certinho com 1, 2, 3, 5 ou 9 fotos.
   mapa = busca do Google Maps para o alfinete "Ver no mapa" (conferida em 12/11/2026). '' = sem alfinete
@@ -11,86 +11,86 @@
 const PONTOS = [
   // ===== Em Sao Miguel das Missoes =====
   { id: 'sitio', mapa: 'Museu das Missões, São Miguel das Missões, RS', grupo: 'sm', capa: 'img/hero-igreja.jpg',
-    titulo: ['Sítio de São Miguel Arcanjo', 'Sitio de São Miguel Arcanjo'],
-    itens: [['Patrimônio Mundial da UNESCO', 'Patrimonio Mundial de la UNESCO'], ['Sítio arqueológico', 'Sitio arqueológico']],
+    titulo: ['Sítio de São Miguel Arcanjo', 'Sitio de São Miguel Arcanjo', 'São Miguel Arcanjo Site'],
+    itens: [['Patrimônio Mundial da UNESCO', 'Patrimonio Mundial de la UNESCO', 'UNESCO World Heritage Site'], ['Sítio arqueológico', 'Sitio arqueológico', 'Archaeological site']],
     fotos: [
-      ['img/hero-igreja.jpg', 'A igreja de São Miguel Arcanjo', 'La iglesia de São Miguel Arcanjo'],
-      ['img/lugares/sitio.jpg', 'O sítio a céu aberto', 'El sitio a cielo abierto'],
-      ['img/roteiro-6-a.jpg', 'Arcos da antiga igreja', 'Arcos de la antigua iglesia'],
-      ['img/hero-torre.jpg', 'A torre da igreja', 'La torre de la iglesia'],
-      ['img/hero-neblina.jpg', 'O sítio ao amanhecer', 'El sitio al amanecer']
+      ['img/hero-igreja.jpg', 'A igreja de São Miguel Arcanjo', 'La iglesia de São Miguel Arcanjo', 'The church of São Miguel Arcanjo'],
+      ['img/lugares/sitio.jpg', 'O sítio a céu aberto', 'El sitio a cielo abierto', 'The open-air site'],
+      ['img/roteiro-6-a.jpg', 'Arcos da antiga igreja', 'Arcos de la antigua iglesia', 'Arches of the old church'],
+      ['img/hero-torre.jpg', 'A torre da igreja', 'La torre de la iglesia', 'The church tower'],
+      ['img/hero-neblina.jpg', 'O sítio ao amanhecer', 'El sitio al amanecer', 'The site at dawn']
     ] },
   { id: 'museu', mapa: 'Museu das Missões, São Miguel das Missões, RS', grupo: 'sm', capa: 'img/lugares/museu.jpg',
-    titulo: ['Museu das Missões', 'Museo de las Misiones'],
-    itens: [['Dentro do sítio', 'Dentro del sitio']],
+    titulo: ['Museu das Missões', 'Museo de las Misiones', 'Museum of the Missions'],
+    itens: [['Dentro do sítio', 'Dentro del sitio', 'Inside the site']],
     fotos: [
-      ['img/lugares/museu.jpg', 'O pavilhão do museu', 'El pabellón del museo'],
-      ['img/pontos/museu-2.jpg', 'O museu e o gramado do sítio', 'El museo y el césped del sitio']
+      ['img/lugares/museu.jpg', 'O pavilhão do museu', 'El pabellón del museo', 'The museum pavilion'],
+      ['img/pontos/museu-2.jpg', 'O museu e o gramado do sítio', 'El museo y el césped del sitio', 'The museum and the lawn of the site']
     ] },
   { id: 'someluz', mapa: 'Som e Luz São Miguel das Missões', grupo: 'sm',
-    titulo: ['Espetáculo Som e Luz', 'Espectáculo Luz y Sonido'],
-    itens: [['À noite', 'De noche']],
+    titulo: ['Espetáculo Som e Luz', 'Espectáculo Luz y Sonido', 'Sound and Light Show'],
+    itens: [['À noite', 'De noche', 'At night']],
     fotos: [
-      ['img/lugares/someluz.jpg', 'Som e Luz na fachada da igreja', 'Luz y Sonido sobre la fachada de la iglesia'],
-      ['img/lugares/someluz2.jpg', 'A igreja iluminada à noite', 'La iglesia iluminada de noche']
+      ['img/lugares/someluz.jpg', 'Som e Luz na fachada da igreja', 'Luz y Sonido sobre la fachada de la iglesia', 'Sound and Light on the church façade'],
+      ['img/lugares/someluz2.jpg', 'A igreja iluminada à noite', 'La iglesia iluminada de noche', 'The church lit up at night']
     ] },
   { id: 'fonte', mapa: 'Fonte Missioneira, São Miguel das Missões, RS', grupo: 'sm',
-    titulo: ['Fonte Missioneira', 'Fuente Misionera'],
+    titulo: ['Fonte Missioneira', 'Fuente Misionera', 'Mission Fountain'],
     fotos: [
-      ['img/lugares/fonte.jpg', 'Rostos esculpidos na pedra', 'Rostros tallados en la piedra'],
-      ['img/roteiro-2-a.jpg', 'A água saindo da pedra esculpida', 'El agua que brota de la piedra tallada']
+      ['img/lugares/fonte.jpg', 'Rostos esculpidos na pedra', 'Rostros tallados en la piedra', 'Faces carved in the stone'],
+      ['img/roteiro-2-a.jpg', 'A água saindo da pedra esculpida', 'El agua que brota de la piedra tallada', 'Water flowing from the carved stone']
     ] },
   { id: 'praca', mapa: 'Monumento a São Miguel Arcanjo, São Miguel das Missões, RS', grupo: 'sm',
-    titulo: ['Praça e centro de São Miguel', 'Plaza y centro de São Miguel'],
-    fotos: [['img/lugares/praca.jpg', 'Monumento a São Miguel, na praça', 'Monumento a São Miguel, en la plaza']] },
+    titulo: ['Praça e centro de São Miguel', 'Plaza y centro de São Miguel', 'São Miguel square and town center'],
+    fotos: [['img/lugares/praca.jpg', 'Monumento a São Miguel, na praça', 'Monumento a São Miguel, en la plaza', 'Monument to São Miguel, on the square']] },
   { id: 'artesanato', mapa: '', grupo: 'sm',
-    titulo: ['Artesanato guarani', 'Artesanía guaraní'],
-    fotos: [['img/lugares/artesanato.jpg', 'Bichos esculpidos em madeira', 'Animales tallados en madera']] },
+    titulo: ['Artesanato guarani', 'Artesanía guaraní', 'Guarani crafts'],
+    fotos: [['img/lugares/artesanato.jpg', 'Bichos esculpidos em madeira', 'Animales tallados en madera', 'Animals carved in wood']] },
   { id: 'aldeia', mapa: '', grupo: 'sm',
-    titulo: ['Aldeia guarani Tekoá Koenju', 'Aldea guaraní Tekoá Koenju'],
-    fotos: [['img/lugares/aldeia.jpg', 'Casa tradicional na aldeia', 'Casa tradicional en la aldea']] },
+    titulo: ['Aldeia guarani Tekoá Koenju', 'Aldea guaraní Tekoá Koenju', 'Tekoá Koenju Guarani village'],
+    fotos: [['img/lugares/aldeia.jpg', 'Casa tradicional na aldeia', 'Casa tradicional en la aldea', 'Traditional house in the village']] },
   { id: 'benzedores', mapa: '', grupo: 'sm',
-    titulo: ['Visita aos benzedores', 'Visita a los benzedores'],
-    fotos: [['img/lugares/benzedores.jpg', 'Dona Alzira benzendo', 'Doña Alzira dando una bendición']] },
+    titulo: ['Visita aos benzedores', 'Visita a los benzedores', 'Visit to the benzedores'],
+    fotos: [['img/lugares/benzedores.jpg', 'Dona Alzira benzendo', 'Doña Alzira dando una bendición', 'Dona Alzira giving a blessing']] },
   { id: 'antimon', mapa: 'Antimonumento ao Bandeirante, São Miguel das Missões, RS', grupo: 'sm',
-    titulo: ['Antimonumento ao Bandeirante', 'Antimonumento al Bandeirante'],
-    fotos: [['img/lugares/antimon.jpg', 'A cabeça do bandeirante afundada no chão', 'La cabeza del bandeirante hundida en el suelo']] },
+    titulo: ['Antimonumento ao Bandeirante', 'Antimonumento al Bandeirante', 'Anti-Monument to the Bandeirante'],
+    fotos: [['img/lugares/antimon.jpg', 'A cabeça do bandeirante afundada no chão', 'La cabeza del bandeirante hundida en el suelo', 'The bandeirante’s head sunk into the ground']] },
   { id: 'borraio', mapa: 'Borraio Minhas Origens, São Miguel das Missões, RS', grupo: 'sm',
-    titulo: ['Borraio Minhas Origens', 'Borraio Minhas Origens'],
+    titulo: ['Borraio Minhas Origens', 'Borraio Minhas Origens', 'Borraio Minhas Origens'],
     fotos: [
-      ['img/lugares/borraio.jpg', 'O galpão do Borraio', 'El galpón del Borraio'],
-      ['img/pontos/borraio-2.jpg', 'Rádios, televisores e lembranças antigas', 'Radios, televisores y recuerdos antiguos']
+      ['img/lugares/borraio.jpg', 'O galpão do Borraio', 'El galpón del Borraio', 'The Borraio shed'],
+      ['img/pontos/borraio-2.jpg', 'Rádios, televisores e lembranças antigas', 'Radios, televisores y recuerdos antiguos', 'Radios, TVs and old keepsakes']
     ] },
 
   // ===== Pela regiao =====
   { id: 'caaro', mapa: 'Santuário do Caaró, Caibaté, RS', grupo: 'regiao',
-    titulo: ['Santuário do Caaró', 'Santuario de Caaró'],
-    fotos: [['img/lugares/caaro.jpg', 'Santuário do Caaró, em Caibaté', 'Santuario de Caaró, en Caibaté']] },
+    titulo: ['Santuário do Caaró', 'Santuario de Caaró', 'Caaró Sanctuary'],
+    fotos: [['img/lugares/caaro.jpg', 'Santuário do Caaró, em Caibaté', 'Santuario de Caaró, en Caibaté', 'Caaró Sanctuary, in Caibaté']] },
   { id: 'catedral', mapa: 'Catedral Angelopolitana, Santo Ângelo, RS', grupo: 'regiao',
-    titulo: ['Catedral Angelopolitana', 'Catedral Angelopolitana'],
+    titulo: ['Catedral Angelopolitana', 'Catedral Angelopolitana', 'Angelopolitana Cathedral'],
     fotos: [
-      ['img/lugares/catedral.jpg', 'Catedral Angelopolitana, em Santo Ângelo', 'Catedral Angelopolitana, en Santo Ângelo'],
-      ['img/lugares/stoangelo.jpg', 'Praça Pinheiro Machado, com a Catedral ao fundo', 'Plaza Pinheiro Machado, con la Catedral al fondo']
+      ['img/lugares/catedral.jpg', 'Catedral Angelopolitana, em Santo Ângelo', 'Catedral Angelopolitana, en Santo Ângelo', 'Angelopolitana Cathedral, in Santo Ângelo'],
+      ['img/lugares/stoangelo.jpg', 'Praça Pinheiro Machado, com a Catedral ao fundo', 'Plaza Pinheiro Machado, con la Catedral al fondo', 'Pinheiro Machado Square, with the Cathedral in the background']
     ] },
   { id: 'saojoao', mapa: 'Sítio Arqueológico de São João Batista, Entre-Ijuís, RS', grupo: 'regiao',
-    titulo: ['Sítio de São João Batista', 'Sitio de São João Batista'],
-    itens: [['Sítio arqueológico', 'Sitio arqueológico']],
+    titulo: ['Sítio de São João Batista', 'Sitio de São João Batista', 'São João Batista Site'],
+    itens: [['Sítio arqueológico', 'Sitio arqueológico', 'Archaeological site']],
     fotos: [
-      ['img/lugares/saojoao.jpg', 'Painel em relevo no sítio', 'Panel en relieve en el sitio'],
-      ['img/pontos/saojoao-2.jpg', 'O sítio entre as árvores', 'El sitio entre los árboles'],
-      ['img/pontos/saojoao-3.jpg', 'Detalhe do relevo esculpido', 'Detalle del relieve tallado']
+      ['img/lugares/saojoao.jpg', 'Painel em relevo no sítio', 'Panel en relieve en el sitio', 'Relief panel at the site'],
+      ['img/pontos/saojoao-2.jpg', 'O sítio entre as árvores', 'El sitio entre los árboles', 'The site among the trees'],
+      ['img/pontos/saojoao-3.jpg', 'Detalhe do relevo esculpido', 'Detalle del relieve tallado', 'Detail of the carved relief']
     ] },
   { id: 'saonic', mapa: 'Sítio Arqueológico de São Nicolau, São Nicolau, RS', grupo: 'regiao',
-    titulo: ['São Nicolau', 'São Nicolau'],
-    fotos: [['img/lugares/saonic.jpg', 'Sítio de São Nicolau', 'Sitio de São Nicolau']] },
+    titulo: ['São Nicolau', 'São Nicolau', 'São Nicolau'],
+    fotos: [['img/lugares/saonic.jpg', 'Sítio de São Nicolau', 'Sitio de São Nicolau', 'São Nicolau site']] },
   { id: 'saoluiz', mapa: 'Igreja Matriz de São Luiz Gonzaga, São Luiz Gonzaga, RS', grupo: 'regiao',
-    titulo: ['São Luiz Gonzaga', 'São Luiz Gonzaga'],
-    fotos: [['img/lugares/saoluiz.jpg', 'Catedral de São Luiz Gonzaga', 'Catedral de São Luiz Gonzaga']] },
+    titulo: ['São Luiz Gonzaga', 'São Luiz Gonzaga', 'São Luiz Gonzaga'],
+    fotos: [['img/lugares/saoluiz.jpg', 'Catedral de São Luiz Gonzaga', 'Catedral de São Luiz Gonzaga', 'São Luiz Gonzaga Cathedral']] },
   { id: 'caminho', mapa: 'Caminho das Missões, Santo Ângelo, RS', grupo: 'regiao',
-    titulo: ['Caminho das Missões', 'Camino de las Misiones'],
-    fotos: [['img/lugares/caminho.jpg', 'Trecho do Caminho das Missões', 'Tramo del Camino de las Misiones']] },
+    titulo: ['Caminho das Missões', 'Camino de las Misiones', 'Caminho das Missões'],
+    fotos: [['img/lugares/caminho.jpg', 'Trecho do Caminho das Missões', 'Tramo del Camino de las Misiones', 'A stretch of the Caminho das Missões']] },
   { id: 'argentina', mapa: 'San Ignacio Miní, San Ignacio, Misiones, Argentina', grupo: 'regiao',
-    titulo: ['San Ignacio Miní', 'San Ignacio Miní'],
-    itens: [['Na Argentina', 'En Argentina'], ['Patrimônio Mundial da UNESCO', 'Patrimonio Mundial de la UNESCO']],
-    fotos: [['img/lugares/argentina.jpg', 'San Ignacio Miní, na Argentina', 'San Ignacio Miní, en Argentina']] }
+    titulo: ['San Ignacio Miní', 'San Ignacio Miní', 'San Ignacio Miní'],
+    itens: [['Na Argentina', 'En Argentina', 'In Argentina'], ['Patrimônio Mundial da UNESCO', 'Patrimonio Mundial de la UNESCO', 'UNESCO World Heritage Site']],
+    fotos: [['img/lugares/argentina.jpg', 'San Ignacio Miní, na Argentina', 'San Ignacio Miní, en Argentina', 'San Ignacio Miní, in Argentina']] }
 ];

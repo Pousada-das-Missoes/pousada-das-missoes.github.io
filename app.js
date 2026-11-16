@@ -5,9 +5,12 @@
   var topo = document.getElementById('topo');
   var WA = 'https://wa.me/5555981615722?text=';
 
-  // idioma: o script no <head> decide (navegador em espanhol, ?lang=es ou escolha salva); textos em espanhol no es.js
-  var LANG = window.IDIOMA === 'es' && typeof ES !== 'undefined' ? 'es' : 'pt';
-  var U = LANG === 'es' ? ES.ui : {
+  // idioma: o script no <head> decide (?lang=, escolha da sessao ou idioma do navegador);
+  // textos em espanhol no es.js e em ingles no en.js; o que faltar la fica em portugues
+  var TRADUCOES = { es: typeof ES !== 'undefined' ? ES : null, en: typeof EN !== 'undefined' ? EN : null };
+  var LANG = TRADUCOES[window.IDIOMA] ? window.IDIOMA : 'pt';
+  var TR = LANG === 'pt' ? null : TRADUCOES[LANG];
+  var UPT = {
     manha: 'Manhã', tarde: 'Tarde', noite: 'Noite',
     ordinais: ['Primeiro', 'Segundo', 'Terceiro', 'Quarto', 'Quinto', 'Sexto', 'Sétimo'],
     oDia: 'O dia', diaMin: 'dia', diasMin: 'dias', Dia: 'Dia',
@@ -23,34 +26,37 @@
     consultar: 'Consultar valores', direct: 'Direct',
     grupoSM: 'Em São Miguel das Missões', grupoRegiao: 'Pela região', nosRoteiros: 'Aparece nos roteiros de',
     todosPontos: '↑ Todos os pontos', verMapa: 'Ver no mapa', verPonto: 'Saiba mais sobre este ponto', fotosPontos: 'Fotos dos pontos turísticos',
-    waPontos: 'Olá! Vi os pontos turísticos e quero saber os valores da hospedagem para a minha data.'
+    waPontos: 'Olá! Vi os pontos turísticos e quero saber os valores da hospedagem para a minha data.',
+    aConfirmar: 'a confirmar'
   };
+  var U = UPT;
+  if (TR) { U = {}; Object.keys(UPT).forEach(function (k) { U[k] = TR.ui[k] !== undefined ? TR.ui[k] : UPT[k]; }); }
   var periodos = [['manha', U.manha], ['tarde', U.tarde], ['noite', U.noite]];
   var ordinais = U.ordinais;
   // a escolha vale so enquanto a pessoa navega (aba aberta); numa visita nova volta a seguir o idioma do navegador
   try { if (window.IDIOMA_ESCOLHIDO) sessionStorage.setItem('lang', LANG); } catch (e) {}
-  if (LANG === 'es') {
-    // textos fixos das paginas (atributos data-es no HTML)
-    Array.prototype.forEach.call(document.querySelectorAll('[data-es]'), function (el) { el.innerHTML = el.getAttribute('data-es'); });
+  if (TR) {
+    // textos fixos das paginas (atributos data-es / data-en no HTML)
+    Array.prototype.forEach.call(document.querySelectorAll('[data-' + LANG + ']'), function (el) { el.innerHTML = el.getAttribute('data-' + LANG); });
     ['aria-label', 'title', 'content', 'href', 'data-legenda'].forEach(function (a) {
-      Array.prototype.forEach.call(document.querySelectorAll('[data-es-' + a + ']'), function (el) { el.setAttribute(a, el.getAttribute('data-es-' + a)); });
+      Array.prototype.forEach.call(document.querySelectorAll('[data-' + LANG + '-' + a + ']'), function (el) { el.setAttribute(a, el.getAttribute('data-' + LANG + '-' + a)); });
     });
     // textos dos roteiros e da pousada
-    Object.keys(ES.L).forEach(function (k) { if (L[k]) { L[k].t = ES.L[k].t; L[k].d = ES.L[k].d; } });
-    Object.keys(ES.D).forEach(function (k) { if (D[k]) D[k].titulo = ES.D[k]; });
-    ROTEIROS.forEach(function (r) { var t = ES.R[r.dias]; if (t) Object.keys(t).forEach(function (c) { r[c] = t[c]; }); });
+    Object.keys(TR.L).forEach(function (k) { if (L[k]) { L[k].t = TR.L[k].t; L[k].d = TR.L[k].d; } });
+    Object.keys(TR.D).forEach(function (k) { if (D[k]) D[k].titulo = TR.D[k]; });
+    ROTEIROS.forEach(function (r) { var t = TR.R[r.dias]; if (t) Object.keys(t).forEach(function (c) { r[c] = t[c]; }); });
     if (typeof ESPACOS !== 'undefined') ESPACOS.forEach(function (e) {
-      var t = ES.E[e.id]; if (!t) return;
+      var t = TR.E[e.id]; if (!t) return;
       ['curto', 'rotulo', 'titulo', 'texto', 'itens'].forEach(function (c) { if (t[c]) e[c] = t[c]; });
       if (t.legs) e.fotos.forEach(function (f, i) { if (t.legs[i]) f.leg = t.legs[i]; });
     });
   }
-  function onde(o) { return LANG === 'es' && ES.O[o] ? ES.O[o] : o; }
+  function onde(o) { return TR && TR.O[o] ? TR.O[o] : o; }
 
   if (!RASCUNHO) document.body.classList.add('final');
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
-  function conf(c) { return c ? '<em class="conf" data-c="' + esc(c) + '">a confirmar</em>' : ''; }
+  function conf(c) { return c ? '<em class="conf" data-c="' + esc(c) + '">' + U.aConfirmar + '</em>' : ''; }
   function diasTxt(n) { return n === 1 ? U.diaMin : U.diasMin; }
   function linkRoteiro(n) { return 'roteiro.html?dias=' + n; }
   function msgWA(r) { return WA + encodeURIComponent(U.waRoteiro.replace('{n}', r.dias).replace('{d}', diasTxt(r.dias))); }
@@ -242,15 +248,15 @@
 
   // pontos turisticos (pontos.js): nome e fotos de la, cidade e texto do roteiros.js (L), ja no idioma da pagina
   function montaPontos() {
-    var es = LANG === 'es';
+    var n = { pt: 0, es: 1, en: 2 }[LANG] || 0;
     return PONTOS.map(function (p) {
       var l = L[p.id] || { t: '', o: '', d: '' };
       return {
         id: p.id, grupo: p.grupo, capa: p.capa, mapa: p.mapa,
-        titulo: (p.titulo && p.titulo[es ? 1 : 0]) || l.t,
+        titulo: (p.titulo && (p.titulo[n] || p.titulo[0])) || l.t,
         rotulo: onde(l.o), texto: l.d, c: l.c,
-        itens: (p.itens || []).map(function (i) { return i[es ? 1 : 0]; }),
-        fotos: p.fotos.map(function (f) { return { f: f[0], leg: (es ? f[2] : f[1]) || f[1] }; }),
+        itens: (p.itens || []).map(function (i) { return i[n] || i[0]; }),
+        fotos: p.fotos.map(function (f) { return { f: f[0], leg: f[n + 1] || f[1] }; }),
         roteiros: ROTEIROS.filter(function (r) {
           return r.dias_.some(function (d) { return periodos.some(function (q) { return D[d][q[0]].indexOf(p.id) >= 0; }); });
         }).map(function (r) { return r.dias; })
@@ -466,7 +472,7 @@
 
   // seletor PT | ES: cada link abre a mesma pagina no outro idioma (e a escolha fica salva)
   function comLang(href, l) {
-    var h = href.split('#'), u = h[0].replace(/([?&])lang=(pt|es)&?/, '$1').replace(/[?&]$/, '');
+    var h = href.split('#'), u = h[0].replace(/([?&])lang=(pt|es|en)&?/, '$1').replace(/[?&]$/, '');
     return u + (u.indexOf('?') < 0 ? '?' : '&') + 'lang=' + l + (h.length > 1 ? '#' + h[1] : '');
   }
   Array.prototype.forEach.call(document.querySelectorAll('.js-idioma'), function (a) {
