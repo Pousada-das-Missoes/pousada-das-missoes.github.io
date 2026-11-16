@@ -27,7 +27,7 @@
 <script>/* idioma antes de desenhar a pagina: ?lang=, escolha da sessao ou idioma do navegador (pt, es ou en). Ingles: navegador em ingles ou em outra lingua, fora do fuso do Brasil */
 (function(){var l='pt',e=0;try{var q=/[?&]lang=(pt|es|en)\b/.exec(location.search);if(q){l=q[1];e=1}else{try{localStorage.removeItem('lang')}catch(y){}var s=sessionStorage.getItem('lang');if(s==='pt'||s==='es'||s==='en'){l=s;e=1}else{var n=navigator.languages||[navigator.language||''],g='en';for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase().slice(0,2);if(c==='pt'||c==='es'||c==='en'){g=c;break}}if(g==='en'){var z='';try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(w){}if(/^America\/(Sao_Paulo|Bahia|Fortaleza|Recife|Belem|Manaus|Cuiaba|Campo_Grande|Porto_Velho|Boa_Vista|Rio_Branco|Araguaina|Maceio|Santarem|Noronha|Eirunepe)$/.test(z))g='pt'}l=g}}}catch(x){}
 window.IDIOMA=l;window.IDIOMA_ESCOLHIDO=e;if(l!=='pt'){var h=document.documentElement;h.lang=l;h.className+=' '+l+' trad';setTimeout(function(){h.className+=' pronto'},1500)}})();</script>
-<link rel="stylesheet" href="estilo.css?v=20261116c">
+<link rel="stylesheet" href="estilo.css?v=20261116d">
 </head>
 <body>
 
@@ -208,9 +208,9 @@ window.IDIOMA=l;window.IDIOMA_ESCOLHIDO=e;if(l!=='pt'){var h=document.documentEl
 </footer>
 <div class="faixa faixa-base" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
 
-<script src="roteiros.js?v=20261116c"></script>
-<script src="es.js?v=20261116c"></script>
-<script src="en.js?v=20261116c"></script>
-<script src="app.js?v=20261116c"></script>
+<script src="roteiros.js?v=20261116d"></script>
+<script src="es.js?v=20261116d"></script>
+<script src="en.js?v=20261116d"></script>
+<script src="app.js?v=20261116d"></script>
 </body>
 </html>
