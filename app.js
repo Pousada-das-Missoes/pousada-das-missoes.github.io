@@ -488,24 +488,29 @@
     });
   }
 
-  // O site abre sempre no topo (pedido do Pedro, 12/11/2026). So vai direto a uma secao quem clicou num link
-  // do proprio site (menu, "Saiba mais"). Depois do salto o #secao sai do endereco: recarregar, trocar PT/ES
-  // ou abrir pelo historico do navegador comeca no topo de novo.
+  // Toda pagina abre SEMPRE no topo (Pedro, 16/11/2026: "nunca vou querer que scrolle, sempre bem em cima").
+  // Link que leva para OUTRA pagina perde o #secao (menu "Roteiros", "Como chegar", "Saiba mais"...), entao a
+  // pagina nova abre no topo. Link para uma secao da MESMA pagina (#dia-2, cartoes do indice) continua rolando,
+  // porque e para isso que ele existe. Recarregar, voltar ou abrir endereco antigo com #secao tambem abre no topo.
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   var navInfo = (window.performance && performance.getEntriesByType && performance.getEntriesByType('navigation')[0]) || {};
-  var pastaSite = location.href.split('#')[0].split('?')[0].replace(/[^\/]*$/, '');
+  function paginaDe(u) { return u.pathname.replace(/\/$/, '/index.html') + u.search; }
+  var estaPagina = paginaDe(location);
+  Array.prototype.forEach.call(document.querySelectorAll('a[href*="#"]'), function (a) {
+    var href = a.getAttribute('href');
+    if (href.charAt(0) === '#') return;
+    try {
+      var u = new URL(href, location.href);
+      if (u.origin === location.origin && paginaDe(u) !== estaPagina) a.setAttribute('href', href.split('#')[0]);
+    } catch (e) {}
+  });
   var mexeu = false;
   ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) {
     window.addEventListener(ev, function () { mexeu = true; }, { passive: true });
   });
   function semHash() { if (location.hash) history.replaceState(history.state, '', location.pathname + location.search); }
   function noTopo() { window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); }
-  var alvo = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
-  if (alvo && navInfo.type === 'navigate' && document.referrer.indexOf(pastaSite) === 0) {
-    var irAlvo = function () { if (!mexeu) alvo.scrollIntoView({ block: 'start', behavior: 'instant' }); };
-    irAlvo();
-    window.addEventListener('load', function () { irAlvo(); setTimeout(semHash, 400); });
-  } else if (location.hash || navInfo.type === 'reload' || navInfo.type === 'back_forward') {
+  if (location.hash || navInfo.type === 'reload' || navInfo.type === 'back_forward') {
     semHash(); noTopo();
     window.addEventListener('load', function () { if (!mexeu) { noTopo(); setTimeout(function () { if (!mexeu) noTopo(); }, 50); } });
   }
