@@ -116,12 +116,13 @@
     '</a>';
   }
 
-  /* ===== pagina inicial: cartoes dos 7 roteiros ===== */
+  // links antigos (index.html#3-dias, de quando os roteiros eram a pagina inicial) vao para a pagina do roteiro
+  var antigo = /^#(\d)-dias?$/.exec(location.hash);
+  if (antigo) { location.replace(linkRoteiro(antigo[1])); return; }
+
+  /* ===== pagina dos roteiros (roteiros.html): cartoes dos 7 roteiros ===== */
   var cartoes = document.getElementById('cartoes');
   if (cartoes) {
-    // links antigos (index.html#3-dias) vao para a pagina do roteiro
-    var antigo = /^#(\d)-dias?$/.exec(location.hash);
-    if (antigo) { location.replace(linkRoteiro(antigo[1])); return; }
     cartoes.innerHTML = ROTEIROS.map(cartao).join('');
   }
 
@@ -483,7 +484,7 @@
   });
   // quem escolheu o idioma continua nele ao passar de uma pagina para outra (mesmo sem memoria do navegador)
   if (window.IDIOMA_ESCOLHIDO) {
-    Array.prototype.forEach.call(document.querySelectorAll('a[href^="index.html"], a[href^="roteiro.html"], a[href^="pousada.html"], a[href^="pontos.html"]'), function (a) {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href^="index.html"], a[href^="roteiros.html"], a[href^="roteiro.html"], a[href^="pontos.html"]'), function (a) {
       if (!a.classList.contains('js-idioma')) a.setAttribute('href', comLang(a.getAttribute('href'), LANG));
     });
   }

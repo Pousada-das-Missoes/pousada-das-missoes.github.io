@@ -1,5 +1,5 @@
 /*
-  FOTOS E TEXTOS DA PAGINA "CONHECA A POUSADA" (pousada.html)
+  FOTOS E TEXTOS DA PAGINA "CONHECA A POUSADA" (index.html, a pagina inicial do site)
   Cada espaco tem: id (ancora), curto (nome no menu), rotulo, titulo, texto, c = observacao "a confirmar",
   itens (lista opcional) e fotos [{ f: arquivo, leg: legenda }]. A primeira foto aparece grande.
   Para trocar uma foto: substitua o arquivo em img/pousada/ ou mude o caminho aqui.

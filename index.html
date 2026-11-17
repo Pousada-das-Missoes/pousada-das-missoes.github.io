@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-es="Itinerarios por las Misiones | Pousada das Missões" data-en="Itineraries through the Missions | Pousada das Missões">Roteiros pelas Missões | Pousada das Missões</title>
-<meta name="description" content="Ideias de roteiro de um a sete dias em São Miguel das Missões e na região dos Sete Povos. Sugestões gratuitas da Pousada das Missões, que não vende pacotes." data-es-content="Ideas de itinerario de uno a siete días en São Miguel das Missões y en la región de los Siete Pueblos. Sugerencias gratuitas de la Pousada das Missões, que no vende paquetes." data-en-content="Itinerary ideas from one to seven days in São Miguel das Missões and the Seven Peoples region. Free suggestions from Pousada das Missões, which does not sell tour packages.">
+<title>Pousada das Missões | São Miguel das Missões, RS</title>
+<meta name="description" content="Conheça a Pousada das Missões por dentro: apartamentos e suítes, o melhor café da região, piscina, jardins e estacionamento, em São Miguel das Missões, RS." data-es-content="Conocé la Pousada das Missões por dentro: habitaciones y suites, el mejor desayuno de la región, piscina, jardines y estacionamiento, en São Miguel das Missões, RS, Brasil." data-en-content="Take a look inside Pousada das Missões: rooms and suites, the best breakfast in the region, pool, gardens and parking, in São Miguel das Missões, RS, Brazil.">
 <!-- RASCUNHO: tirar a linha abaixo quando os donos aprovarem os textos -->
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Roteiros pelas Missões | Pousada das Missões">
-<meta property="og:description" content="Ideias de roteiro de um a sete dias. Sugestões gratuitas, sem venda de pacotes.">
-<meta property="og:image" content="https://pedronicolasmm-coder.github.io/pousada-roteiros/img/capa.jpg">
+<meta property="og:title" content="Pousada das Missões | São Miguel das Missões, RS">
+<meta property="og:description" content="Apartamentos e suítes, o melhor café da região, cozinha e churrasqueira, piscina e jardins em São Miguel das Missões, RS.">
+<meta property="og:image" content="https://pedronicolasmm-coder.github.io/pousada-roteiros/img/pousada/capa.jpg">
 <meta property="og:url" content="https://pedronicolasmm-coder.github.io/pousada-roteiros/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -27,116 +27,59 @@
 <script>/* idioma antes de desenhar a pagina: ?lang=, escolha da sessao ou idioma do navegador (pt, es ou en). Ingles: navegador em ingles ou em outra lingua, fora do fuso do Brasil */
 (function(){var l='pt',e=0;try{var q=/[?&]lang=(pt|es|en)\b/.exec(location.search);if(q){l=q[1];e=1}else{try{localStorage.removeItem('lang')}catch(y){}var s=sessionStorage.getItem('lang');if(s==='pt'||s==='es'||s==='en'){l=s;e=1}else{var n=navigator.languages||[navigator.language||''],g='en';for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase().slice(0,2);if(c==='pt'||c==='es'||c==='en'){g=c;break}}if(g==='en'){var z='';try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(w){}if(/^America\/(Sao_Paulo|Bahia|Fortaleza|Recife|Belem|Manaus|Cuiaba|Campo_Grande|Porto_Velho|Boa_Vista|Rio_Branco|Araguaina|Maceio|Santarem|Noronha|Eirunepe)$/.test(z))g='pt'}l=g}}}catch(x){}
 window.IDIOMA=l;window.IDIOMA_ESCOLHIDO=e;if(l!=='pt'){var h=document.documentElement;h.lang=l;h.className+=' '+l+' trad';setTimeout(function(){h.className+=' pronto'},1500)}})();</script>
-<link rel="stylesheet" href="estilo.css?v=20261117c">
+<link rel="stylesheet" href="estilo.css?v=20261117d">
 </head>
-<body>
+<body class="pag-pousada">
 
 <div class="faixa" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
 
 <header class="topo" id="topo">
-  <a href="#" class="marca"><img src="img/logo.png" alt="Pousada das Missões"></a>
+  <a href="index.html" class="marca"><img src="img/logo.png" alt="Pousada das Missões"></a>
   <nav class="menu">
-    <a href="#roteiros" data-es="Itinerarios" data-en="Itineraries">Roteiros</a>
+    <a href="roteiros.html#roteiros" class="destaque" data-es="Itinerarios" data-en="Itineraries">Roteiros</a>
     <a href="pontos.html" class="destaque" data-es="Qué visitar" data-en="What to see">Pontos turísticos</a>
-    <a href="#sobre" data-es="Cómo funciona" data-en="How it works">Como funciona</a>
-    <a href="pousada.html" class="destaque" data-es="Conocé la posada" data-en="Explore the inn">Conheça a pousada</a>
-    <a href="#chegar" data-es="Cómo llegar" data-en="Getting here">Como chegar</a>
+    <a href="roteiros.html#sobre" data-es="Cómo funciona" data-en="How it works">Como funciona</a>
+    <a href="index.html" class="atual" data-es="Conocé la posada" data-en="Explore the inn">Conheça a pousada</a>
+    <a href="#localizacao" data-es="Cómo llegar" data-en="Getting here">Como chegar</a>
   </nav>
-  <nav class="topo-mob" aria-label="Atalhos" data-es-aria-label="Accesos" data-en-aria-label="Shortcuts"><a href="index.html#roteiros" data-es="Itinerarios" data-en="Itineraries">Roteiros</a><a href="pousada.html" class="destaque" data-es="La posada" data-en="The inn">A pousada</a></nav>
+  <nav class="topo-mob" aria-label="Atalhos" data-es-aria-label="Accesos" data-en-aria-label="Shortcuts"><a href="roteiros.html#roteiros" class="destaque" data-es="Itinerarios" data-en="Itineraries">Roteiros</a><a href="index.html" class="atual-mob" data-es="La posada" data-en="The inn">A pousada</a></nav>
   <button type="button" class="topo-menu-btn" id="menu-btn" aria-label="Abrir menu" data-es-aria-label="Abrir menú" data-en-aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  <div class="topo-dir"><div class="idiomas" role="group" aria-label="Idioma" data-en-aria-label="Language"><a class="js-idioma" data-lang="pt" lang="pt-BR" hreflang="pt-BR" title="Português">PT</a><a class="js-idioma" data-lang="es" lang="es" hreflang="es" title="Español">ES</a><a class="js-idioma" data-lang="en" lang="en" hreflang="en" title="English">EN</a></div><a class="btn btn-claro btn-peq" href="https://wa.me/5555981615722?text=Ol%C3%A1!%20Vi%20os%20roteiros%20e%20quero%20saber%20os%20valores%20para%20a%20minha%20data." data-es-href="https://wa.me/5555981615722?text=%C2%A1Hola%21%20Vi%20los%20itinerarios%20y%20quiero%20saber%20los%20precios%20para%20mi%20fecha." data-en-href="https://wa.me/5555981615722?text=Hi%21%20I%20saw%20the%20itineraries%20and%20would%20like%20to%20know%20the%20rates%20for%20my%20dates." target="_blank" rel="noopener" data-es="Consultar precios" data-en="Check rates">Consultar valores</a></div>
+  <div class="topo-dir"><div class="idiomas" role="group" aria-label="Idioma" data-en-aria-label="Language"><a class="js-idioma" data-lang="pt" lang="pt-BR" hreflang="pt-BR" title="Português">PT</a><a class="js-idioma" data-lang="es" lang="es" hreflang="es" title="Español">ES</a><a class="js-idioma" data-lang="en" lang="en" hreflang="en" title="English">EN</a></div><a class="btn btn-claro btn-peq js-wa" href="https://wa.me/5555981615722" target="_blank" rel="noopener" data-es="Consultar precios" data-en="Check rates">Consultar valores</a></div>
 </header>
 
-<section class="hero">
-  <!-- capa rotativa: troca a cada 3 segundos. Para mudar, troque os arquivos ou acrescente outra linha igual (e mais um <i></i> em hero-prog) -->
-  <div class="hero-fotos" aria-hidden="true">
-    <figure class="foto hero-foto ativa" data-src="img/hero-igreja.jpg" data-legenda="São Miguel Arcanjo · Patrimônio Mundial" data-es-data-legenda="São Miguel Arcanjo · Patrimonio Mundial" data-en-data-legenda="São Miguel Arcanjo · World Heritage Site" data-label="Foto da capa: Patrimônio Mundial de São Miguel Arcanjo"></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/fonte.jpg" data-legenda="Fonte Missioneira · São Miguel das Missões" data-es-data-legenda="Fuente Misionera · São Miguel das Missões" data-en-data-legenda="Mission Fountain · São Miguel das Missões" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/hero-2.jpg" data-legenda="Cruz Missioneira · São Miguel das Missões" data-es-data-legenda="Cruz Misionera · São Miguel das Missões" data-en-data-legenda="Mission Cross · São Miguel das Missões" data-label="" style="background-position: 38% center"></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/caaro.jpg" data-legenda="Santuário do Caaró · Caibaté" data-es-data-legenda="Santuario de Caaró · Caibaté" data-en-data-legenda="Caaró Sanctuary · Caibaté" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/museu.jpg" data-legenda="Museu das Missões · São Miguel" data-es-data-legenda="Museo de las Misiones · São Miguel" data-en-data-legenda="Museum of the Missions · São Miguel" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/hero-neblina.jpg" data-legenda="O sítio ao amanhecer · São Miguel" data-es-data-legenda="El sitio al amanecer · São Miguel" data-en-data-legenda="The site at dawn · São Miguel" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/catedral.jpg" data-legenda="Catedral Angelopolitana · Santo Ângelo" data-es-data-legenda="Catedral Angelopolitana · Santo Ângelo" data-en-data-legenda="Angelopolitana Cathedral · Santo Ângelo" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/borraio.jpg" data-legenda="Borraio Minhas Origens · São Miguel das Missões" data-es-data-legenda="Borraio Minhas Origens · São Miguel das Missões" data-en-data-legenda="Borraio Minhas Origens · São Miguel das Missões" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/artesanato.jpg" data-legenda="Artesanato guarani · São Miguel das Missões" data-es-data-legenda="Artesanía guaraní · São Miguel das Missões" data-en-data-legenda="Guarani crafts · São Miguel das Missões" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/someluz.jpg" data-legenda="Espetáculo Som e Luz · São Miguel" data-es-data-legenda="Espectáculo Luz y Sonido · São Miguel" data-en-data-legenda="Sound and Light Show · São Miguel" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/saojoao.jpg" data-legenda="Sítio de São João Batista · Entre-Ijuís" data-es-data-legenda="Sitio de São João Batista · Entre-Ijuís" data-en-data-legenda="São João Batista Site · Entre-Ijuís" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/hero-torre.jpg" data-legenda="A torre da igreja · São Miguel" data-es-data-legenda="La torre de la iglesia · São Miguel" data-en-data-legenda="The church tower · São Miguel" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/saonic.jpg" data-legenda="São Nicolau · Sete Povos" data-es-data-legenda="São Nicolau · Siete Pueblos" data-en-data-legenda="São Nicolau · Seven Peoples" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/lugares/argentina.jpg" data-legenda="San Ignacio Miní · Argentina" data-es-data-legenda="San Ignacio Miní · Argentina" data-en-data-legenda="San Ignacio Miní · Argentina" data-label=""></figure>
-    <figure class="foto hero-foto" data-src="img/capa.jpg" data-legenda="O Patrimônio Mundial a céu aberto" data-es-data-legenda="El Patrimonio Mundial a cielo abierto" data-en-data-legenda="The open-air World Heritage Site" data-label=""></figure>
-  </div>
+<section class="hero rot-hero pousada-hero">
+  <div class="hero-fotos" id="pousada-hero-fotos" aria-hidden="true"><figure class="foto hero-foto ativa" data-src="img/pousada/capa.jpg" data-legenda="A pousada" data-es-data-legenda="La posada" data-en-data-legenda="The inn" data-label=""></figure></div>
   <div class="hero-veu"></div>
   <div class="hero-txt">
-    <p class="rotulo rotulo-claro">Pousada das Missões<span class="so-desk"> &nbsp;·&nbsp; </span><br class="so-mob">São Miguel das Missões, RS</p>
-    <h1 data-es="Itinerarios<br><em>por las Misiones</em>" data-en="Itineraries<br><em>through the Missions</em>">Roteiros<br><em>pelas Missões</em></h1>
+    <a class="voltar" href="roteiros.html" data-es="Ideas de itinerario →" data-en="Itinerary ideas →">Ideias de roteiro →</a>
+    <p class="rotulo rotulo-claro">São Miguel das Missões &nbsp;·&nbsp; RS</p>
+    <h1 data-es="Conocé<br><em>la posada</em>" data-en="Explore<br><em>the inn</em>">Conheça<br><em>a pousada</em></h1>
     <span class="fio"></span>
-    <p class="hero-sub" data-es="Ideas de itinerario de uno a siete días, sugeridas por quienes conocen las Misiones de cerca." data-en="Itinerary ideas from one to seven days, suggested by people who know the Missions up close.">Ideias de roteiro de um a sete dias, sugeridas por quem conhece as Missões de perto.</p>
-    <p class="selo" data-es="Sugerencias gratuitas<span class='so-desk'> &nbsp;·&nbsp; </span><br class='so-mob'>No vendemos paquetes" data-en="Free suggestions<span class='so-desk'> &nbsp;·&nbsp; </span><br class='so-mob'>We don’t sell packages">Sugestões gratuitas<span class="so-desk"> &nbsp;·&nbsp; </span><br class="so-mob">Não vendemos pacotes</p>
-    <div class="hero-botoes">
-      <a href="#roteiros" class="btn btn-claro" data-es="Ver las ideas de itinerario" data-en="See the itinerary ideas">Ver as ideias de roteiro</a>
-      <a href="pousada.html" class="btn btn-contorno" data-es="Conocé la posada" data-en="Explore the inn">Conheça a pousada</a>
-    </div>
+    <p class="hero-sub" data-es="Habitaciones y suites, el mejor desayuno de la región, cocina y parrilla, piscina y jardines. Mirá cada espacio antes de llegar." data-en="Rooms and suites, the best breakfast in the region, kitchen and barbecue area, pool and gardens. See every space before you arrive.">Apartamentos e suítes, o melhor café da região, cozinha e churrasqueira, piscina e jardins. Veja cada espaço antes de chegar.</p>
   </div>
   <div class="hero-rodape" aria-hidden="true">
-    <p class="hero-legenda"><b id="hero-n">01</b><span id="hero-tot">/ 15</span><em id="hero-leg">São Miguel Arcanjo · Patrimônio Mundial</em></p>
-    <div class="hero-prog" id="hero-prog"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <p class="hero-legenda"><b id="hero-n">01</b><span id="hero-tot"></span><em id="hero-leg"></em></p>
+    <div class="hero-prog" id="hero-prog"><i></i></div>
   </div>
 </section>
 
-<section class="fatos" aria-label="Em poucas palavras" data-es-aria-label="En pocas palabras" data-en-aria-label="In a nutshell">
-  <div class="fato"><b>1983</b><span data-es="São Miguel Arcanjo es Patrimonio Mundial de la UNESCO" data-en="São Miguel Arcanjo is a UNESCO World Heritage Site">São Miguel Arcanjo é Patrimônio Mundial da UNESCO</span></div>
-  <div class="fato"><b data-en="1 to 7">1 a 7</b><span data-es="días de ideas de itinerario, listas para seguir" data-en="days of itinerary ideas, ready to follow">dias de ideias de roteiro, prontas para seguir</span></div>
-  <div class="fato"><b data-es="Gratis" data-en="Free">Grátis</b><span data-es="sugerencias de quienes conocen, sin venta de paquetes" data-en="tips from people who know the area, no packages sold">sugestões de quem conhece, sem venda de pacotes</span></div>
-  <div class="fato"><b data-es="Desayuno" data-en="Breakfast">Café</b><span data-es="el mejor de la región, incluido en todas las tarifas" data-en="the best in the region, included in every rate">o melhor da região, incluso em todas as diárias</span></div>
+<section class="fatos fatos-pousada" aria-label="Incluso na hospedagem" data-es-aria-label="Incluido en el alojamiento" data-en-aria-label="Included in your stay">
+  <div class="fato"><b data-es="Desayuno" data-en="Breakfast">Café</b><span data-es="el mejor de la región, incluido en la tarifa" data-en="the best in the region, included in the rate">o melhor da região, incluso na diária</span></div>
+  <div class="fato"><b data-es="Auto" data-en="Parking">Vaga</b><span data-es="estacionamiento incluido, dentro de la posada" data-en="included, inside the inn">estacionamento incluso, dentro da pousada</span></div>
+  <div class="fato"><b>Pet</b><span data-es="friendly: la mascota de la familia es bienvenida" data-en="friendly: the family pet is welcome">friendly: o bichinho da família é bem-vindo</span></div>
+  <div class="fato"><b data-en="Pool">Piscina</b><span data-es="para las tardes de calor, entre un paseo y otro" data-en="for hot afternoons, between outings">para as tardes de calor, entre um passeio e outro</span></div>
 </section>
 
-<section class="sobre" id="sobre">
-  <div class="sobre-cab">
-    <p class="rotulo" data-es="Antes de empezar" data-en="Before you start">Antes de começar</p>
-    <h2 data-es="Sugerimos caminos.<br><em>El viaje es tuyo.</em>" data-en="We suggest routes.<br><em>The trip is yours.</em>">Sugerimos caminhos.<br><em>A viagem é tua.</em></h2>
-  </div>
-  <div class="aviso">
-    <p class="aviso-titulo" data-en="Important">Importante</p>
-    <p data-es="La Pousada das Missões <strong>no vende paquetes ni itinerarios</strong>. Las ideas de esta página son sugerencias gratuitas, para inspirarte y ayudarte a organizar tu viaje. Paseos, entradas y traslados se coordinan directamente con cada atractivo." data-en="Pousada das Missões <strong>does not sell tour packages or itineraries</strong>. The ideas on this page are free suggestions to inspire you and help you plan your trip. Tours, tickets and transfers are arranged directly with each attraction.">A Pousada das Missões <strong>não vende pacotes nem roteiros</strong>. As ideias desta página são sugestões gratuitas, para inspirar e ajudar a organizar a tua viagem. Passeios, ingressos e transportes são combinados diretamente com cada atrativo.</p>
-  </div>
-  <div class="pilares">
-    <div class="pilar"><span class="pilar-n">I</span><h3 data-es="Ideas, no paquetes" data-en="Ideas, not packages">Ideias, não pacotes</h3><p data-es="Acá no se vende nada. Son sugerencias de paseos para que elijas lo que tenga sentido para tu viaje." data-en="Nothing here is for sale. These are suggestions so you can pick what makes sense for your trip.">Nada aqui é vendido. São sugestões de passeio para tu escolher o que faz sentido para a tua viagem.</p></div>
-    <div class="pilar"><span class="pilar-n">II</span><h3 data-es="Una sola base" data-en="One single base">Uma só base</h3><p data-es="Todos los itinerarios salen de la posada y vuelven a ella. La misma cama todas las noches, sin armar y desarmar la valija." data-en="Every itinerary starts and ends at the inn. The same bed every night, no packing and unpacking.">Todos os roteiros partem e voltam da pousada. A mesma cama todas as noites, sem fazer e desfazer mala.</p></div>
-    <div class="pilar"><span class="pilar-n">III</span><h3 data-es="Orientación de quienes conocen" data-en="Tips from people who know">Orientação de quem conhece</h3><p data-es="Durante la estadía, te indicamos lo que mejor encaja con tus fechas y tu ritmo." data-en="During your stay, we point you to what best fits your dates and your pace.">Durante a hospedagem, a gente indica o que encaixa melhor nas tuas datas e no teu ritmo.</p></div>
-  </div>
-</section>
+<div class="seletor-wrap nav-dias-wrap">
+  <nav class="seletor nav-dias nav-espacos" id="nav-espacos" aria-label="Espaços da pousada" data-es-aria-label="Espacios de la posada" data-en-aria-label="Spaces at the inn"></nav>
+</div>
 
-<section class="roteiros" id="roteiros">
-  <div class="roteiros-cab">
-    <p class="rotulo" data-es="Ideas de itinerario" data-en="Itinerary ideas">Ideias de roteiro</p>
-    <h2 data-es="¿Cuántos días tenés<br><em>en las Misiones?</em>" data-en="How many days do you have<br><em>in the Missions?</em>">Quantos dias tu tem<br><em>nas Missões?</em></h2>
-    <p class="roteiros-sub" data-es="Elegí la duración de tu viaje y abrí el itinerario completo, con cada paseo día a día." data-en="Choose the length of your trip and open the full itinerary, with every stop day by day.">Escolhe a duração da tua viagem e abre o roteiro completo, com cada passeio dia a dia.</p>
-  </div>
-  <div class="cards" id="cartoes"></div>
-  <p class="pousada-ver"><a class="btn btn-escuro" href="pontos.html" data-es="Ver los atractivos turísticos" data-en="See the attractions">Ver os pontos turísticos</a></p>
-</section>
+<main id="espacos" class="espacos"></main>
 
-<section class="pousada" id="pousada">
-  <div class="pousada-cab">
-    <p class="rotulo" data-es="En la posada" data-en="At the inn">Na pousada</p>
-    <h2 data-es="Lo que acompaña<br><em>cualquier itinerario</em>" data-en="What comes with<br><em>every itinerary</em>">O que acompanha<br><em>qualquer roteiro</em></h2>
-  </div>
-  <div class="grade">
-    <div class="cartao"><h3 data-es="El mejor desayuno de la región" data-en="The best breakfast in the region">O melhor café da região</h3><p data-es="Cada día empieza en la posada, con el mejor desayuno de la región incluido en la tarifa." data-en="Every day starts at the inn, with the best breakfast in the region included in the rate.">Todo dia começa na pousada, com o melhor café da região incluso na diária.</p></div>
-    <div class="cartao"><h3 data-es="Estacionamiento" data-en="Parking">Estacionamento</h3><p data-es="Incluido. El auto queda en la posada mientras recorrés el Patrimonio Mundial." data-en="Included. Your car stays at the inn while you walk around the World Heritage Site.">Incluso. O carro fica na pousada enquanto tu caminha pelo Patrimônio Mundial.</p></div>
-    <div class="cartao"><h3>Pet friendly</h3><p data-es="La mascota de la familia también es bienvenida." data-en="The family pet is welcome too.">O bichinho da família também é bem-vindo.</p></div>
-    <div class="cartao"><h3 data-es="Almuerzo y cena" data-en="Lunch and dinner">Almoço e jantar</h3><p data-es="La posada sirve solo el desayuno y te indica dónde comer bien en São Miguel." data-en="The inn serves breakfast only and will tell you where to eat well in São Miguel.">A pousada serve só o café da manhã e indica onde comer bem em São Miguel.</p></div>
-    <div class="cartao"><h3 data-en="Pool">Piscina</h3><p data-es="Para las tardes de calor, entre un paseo y otro, sin salir de la posada." data-en="For hot afternoons between outings, without leaving the inn.">Para as tardes de calor, entre um passeio e outro, sem sair da pousada.</p></div>
-    <div class="cartao"><h3 data-es="Cualquier día de la semana" data-en="Any day of the week">Qualquer dia da semana</h3><p data-es="Los itinerarios funcionan de domingo a domingo. De domingo a jueves, la tarifa es menor.<em class='conf' data-c='Confirmar se a pousada quer falar da diária menor aqui.'>a confirmar</em>" data-en="The itineraries work any day, Sunday to Sunday. From Sunday to Thursday, the rate is lower.<em class='conf' data-c='Confirmar se a pousada quer falar da diária menor aqui.'>to confirm</em>">Os roteiros funcionam de domingo a domingo. De domingo a quinta, a diária é menor.<em class="conf" data-c="Confirmar se a pousada quer falar da diária menor aqui.">a confirmar</em></p></div>
-  </div>
-  <p class="pousada-ver"><a class="btn btn-claro" href="pousada.html" data-es="Conocé la posada por dentro" data-en="Take a look inside the inn">Conheça a pousada por dentro</a></p>
-</section>
-
-<section class="chegar" id="chegar">
+<section class="chegar" id="localizacao">
   <div class="chegar-txt">
-    <p class="rotulo" data-es="Cómo llegar" data-en="Getting here">Como chegar</p>
-    <h2 data-es="En el corazón<br><em>de las Misiones</em>" data-en="In the heart<br><em>of the Missions</em>">No coração<br><em>das Missões</em></h2>
+    <p class="rotulo" data-es="Ubicación" data-en="Location">Localização</p>
+    <h2 data-es="Dónde queda<br><em>la posada</em>" data-en="Where to find<br><em>the inn</em>">Onde fica<br><em>a pousada</em></h2>
     <p class="chegar-intro" data-es="La posada está en São Miguel das Missões, en el noroeste de Rio Grande do Sul, Brasil. Todos los itinerarios salen y vuelven acá." data-en="The inn is in São Miguel das Missões, in the northwest of Rio Grande do Sul, Brazil. Every itinerary starts and ends here.">A pousada fica em São Miguel das Missões, no noroeste do Rio Grande do Sul. Todos os roteiros partem e voltam daqui.</p>
     <p class="chegar-end">R. São Nicolau, 601 · São Miguel das Missões, RS</p>
     <ul class="chegar-lista">
@@ -152,18 +95,26 @@ window.IDIOMA=l;window.IDIOMA_ESCOLHIDO=e;if(l!=='pt'){var h=document.documentEl
 </section>
 
 <section class="cta" id="contato">
-  <figure class="foto cta-foto" data-src="img/cta.jpg" data-label="Foto: hóspedes na placa da pousada"></figure>
+  <figure class="foto cta-foto" data-src="img/cta.jpg" data-label=""></figure>
   <div class="hero-veu"></div>
   <div class="cta-txt">
     <p class="rotulo rotulo-claro" data-es="Alojamiento" data-en="Accommodation">Hospedagem</p>
-    <h2 data-es="¿Qué itinerario<br><em>va con vos?</em>" data-en="Which itinerary<br><em>suits you?</em>">Qual roteiro<br><em>combina contigo?</em></h2>
+    <h2 data-es="¿Te gustó lo que<br><em>viste por acá?</em>" data-en="Like what<br><em>you see?</em>">Gostou do que<br><em>viu por aqui?</em></h2>
     <span class="fio"></span>
     <p class="cta-sub" data-es="¡Te paso los precios para tu fecha!<br>Escribime por WhatsApp o por mensaje directo." data-en="I’ll send you the rates for your dates!<br>Message me on WhatsApp or send a DM.">Te passo os valores da tua data!<br>Me chama no WhatsApp ou no direct.</p>
     <div class="botoes">
-      <a class="btn btn-verde" href="https://wa.me/5555981615722?text=Ol%C3%A1!%20Vi%20os%20roteiros%20e%20quero%20saber%20os%20valores%20para%20a%20minha%20data." data-es-href="https://wa.me/5555981615722?text=%C2%A1Hola%21%20Vi%20los%20itinerarios%20y%20quiero%20saber%20los%20precios%20para%20mi%20fecha." data-en-href="https://wa.me/5555981615722?text=Hi%21%20I%20saw%20the%20itineraries%20and%20would%20like%20to%20know%20the%20rates%20for%20my%20dates." target="_blank" rel="noopener" data-es="Escribir por WhatsApp" data-en="Message on WhatsApp">Chamar no WhatsApp</a>
+      <a class="btn btn-verde" href="https://wa.me/5555981615722?text=Ol%C3%A1!%20Vi%20as%20fotos%20da%20pousada%20e%20quero%20saber%20os%20valores%20para%20a%20minha%20data." data-es-href="https://wa.me/5555981615722?text=%C2%A1Hola%21%20Vi%20las%20fotos%20de%20la%20posada%20y%20quiero%20saber%20los%20precios%20para%20mi%20fecha." data-en-href="https://wa.me/5555981615722?text=Hi%21%20I%20saw%20the%20photos%20of%20the%20inn%20and%20would%20like%20to%20know%20the%20rates%20for%20my%20dates." target="_blank" rel="noopener" data-es="Escribir por WhatsApp" data-en="Message on WhatsApp">Chamar no WhatsApp</a>
       <a class="btn btn-contorno" href="https://ig.me/m/pousadadasmissoes" target="_blank" rel="noopener" data-es="Enviar mensaje directo" data-en="Send a DM">Mandar direct</a>
     </div>
   </div>
+</section>
+
+<section class="roteiros outros-sec">
+  <div class="roteiros-cab">
+    <p class="rotulo" data-es="Ideas de itinerario" data-en="Itinerary ideas">Ideias de roteiro</p>
+    <h2 data-es="¿Y para disfrutar<br><em>las Misiones?</em>" data-en="And to enjoy<br><em>the Missions?</em>">E para aproveitar<br><em>as Missões?</em></h2>
+  </div>
+  <div class="cards" id="outros"></div>
 </section>
 
 <footer class="rodape">
@@ -214,9 +165,10 @@ window.IDIOMA=l;window.IDIOMA_ESCOLHIDO=e;if(l!=='pt'){var h=document.documentEl
 </footer>
 <div class="faixa faixa-base" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
 
-<script src="roteiros.js?v=20261117c"></script>
-<script src="es.js?v=20261117c"></script>
-<script src="en.js?v=20261117c"></script>
-<script src="app.js?v=20261117c"></script>
+<script src="roteiros.js?v=20261117d"></script>
+<script src="pousada-fotos.js?v=20261117d"></script>
+<script src="es.js?v=20261117d"></script>
+<script src="en.js?v=20261117d"></script>
+<script src="app.js?v=20261117d"></script>
 </body>
 </html>
