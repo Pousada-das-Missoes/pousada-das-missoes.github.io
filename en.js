@@ -44,7 +44,7 @@ const EN = {
     cafe:       { t: 'The best breakfast in the region, at the inn', d: 'Included in the rate, to start the day at your own pace.' },
     fonte:      { t: 'Mission Fountain', d: 'A stone fountain from the time of the reductions, one of the loveliest corners of town.' },
     praca:      { t: 'Square and town center', d: 'A walk around downtown São Miguel, with time for a coffee and the little shops.' },
-    irmaica:    { t: 'Cenair Maicá Monument', d: 'A statue honoring the nativist singer and songwriter Cenair Maicá, guitar in hand.' },
+    irmaica:    { t: 'Cenair Maicá Square', d: 'The square with the statue of nativist singer and songwriter Cenair Maicá, one of the great names of Missions music, guitar in hand.' },
     antimon:    { t: 'Anti-Monument to the Bandeirante', d: 'The head of a bandeirante sunk into the ground: a work that turns the idea of a monument upside down and invites you to see the history of the Missions through the eyes of those who lived here.' },
     borraio:    { t: 'Borraio Minhas Origens', d: 'A rustic shed full of old objects, tools and keepsakes that tell the story of where the families of the region came from.' },
     jantar:     { t: 'Dinner in town', d: 'The inn does not serve dinner, but will tell you where to eat well in São Miguel.' },

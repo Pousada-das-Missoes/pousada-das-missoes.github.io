@@ -42,7 +42,7 @@ const ES = {
     cafe:       { t: 'El mejor desayuno de la región, en la posada', d: 'Incluido en la tarifa, para empezar el día sin apuro.' },
     fonte:      { t: 'Fuente Misionera', d: 'Fuente de piedra de la época de las reducciones, uno de los rincones más lindos de la ciudad.' },
     praca:      { t: 'Plaza y centro de la ciudad', d: 'Paseo a pie por el centro de São Miguel, con tiempo para un café y para recorrer las tiendas.' },
-    irmaica:    { t: 'Monumento a Cenair Maicá', d: 'Estatua en homenaje al cantor y compositor nativista Cenair Maicá, con la guitarra en las manos.' },
+    irmaica:    { t: 'Plaza Cenair Maicá', d: 'La plaza con la estatua del cantor y compositor nativista Cenair Maicá, uno de los nombres de la música misionera, con la guitarra en las manos.' },
     antimon:    { t: 'Antimonumento al Bandeirante', d: 'La cabeza de un bandeirante hundida en el suelo: una obra que invierte la idea de monumento y hace pensar la historia de las Misiones desde la mirada de quienes vivieron acá.' },
     borraio:    { t: 'Borraio Minhas Origens', d: 'Galpón rústico con objetos antiguos, herramientas y recuerdos que cuentan los orígenes de las familias de la región.' },
     jantar:     { t: 'Cena en la ciudad', d: 'La posada no sirve cena, pero te indica dónde comer bien en São Miguel.' },

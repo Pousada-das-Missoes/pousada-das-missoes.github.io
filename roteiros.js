@@ -17,7 +17,7 @@ const L = {
   cafe:      { t: "O melhor café da região, na pousada", o: "Pousada das Missões", d: "Incluso na diária, para começar o dia sem pressa." },
   fonte:     { t: "Fonte Missioneira", o: "São Miguel das Missões", d: "Fonte de pedra do tempo das reduções, um dos cantos mais bonitos da cidade.", c: "Confirmar descrição histórica." },
   praca:     { t: "Praça e centro da cidade", o: "São Miguel das Missões", d: "Passeio a pé pelo centro de São Miguel, com tempo para um café e para as lojinhas." },
-  irmaica:   { t: "Monumento a Cenair Maicá", o: "São Miguel das Missões", d: "Estátua em homenagem ao cantor e compositor nativista Cenair Maicá, com o violão nas mãos.", c: "Confirmar se é este o ponto que a pousada indica (antes estava escrito \"Cena Irmaicá\")." },
+  irmaica:   { t: "Praça Cenair Maicá", o: "São Miguel das Missões", d: "A praça com a estátua do cantor e compositor nativista Cenair Maicá, um dos nomes da música missioneira, com o violão nas mãos." },
   antimon:   { t: "Antimonumento ao Bandeirante", o: "São Miguel das Missões", d: "A cabeça de um bandeirante afundada no chão: uma obra que inverte a ideia de monumento e faz pensar a história das Missões pelo olhar de quem viveu aqui.", c: "Confirmar local e descrição." },
   borraio:   { t: "Borraio Minhas Origens", o: "São Miguel das Missões", d: "Galpão rústico com objetos antigos, ferramentas e lembranças que contam as origens das famílias da região.", c: "Confirmar descrição, endereço e horário de visitação." },
   jantar:    { t: "Jantar na cidade", o: "São Miguel das Missões", d: "A pousada não serve jantar, mas indica onde comer bem em São Miguel." },
