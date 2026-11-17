@@ -27,7 +27,7 @@
 <script>/* idioma antes de desenhar a pagina: ?lang=, escolha da sessao ou idioma do navegador (pt, es ou en). Ingles: navegador em ingles ou em outra lingua, fora do fuso do Brasil */
 (function(){var l='pt',e=0;try{var q=/[?&]lang=(pt|es|en)\b/.exec(location.search);if(q){l=q[1];e=1}else{try{localStorage.removeItem('lang')}catch(y){}var s=sessionStorage.getItem('lang');if(s==='pt'||s==='es'||s==='en'){l=s;e=1}else{var n=navigator.languages||[navigator.language||''],g='en';for(var i=0;i<n.length;i++){var c=String(n[i]).toLowerCase().slice(0,2);if(c==='pt'||c==='es'||c==='en'){g=c;break}}if(g==='en'){var z='';try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(w){}if(/^America\/(Sao_Paulo|Bahia|Fortaleza|Recife|Belem|Manaus|Cuiaba|Campo_Grande|Porto_Velho|Boa_Vista|Rio_Branco|Araguaina|Maceio|Santarem|Noronha|Eirunepe)$/.test(z))g='pt'}l=g}}}catch(x){}
 window.IDIOMA=l;window.IDIOMA_ESCOLHIDO=e;if(l!=='pt'){var h=document.documentElement;h.lang=l;h.className+=' '+l+' trad';setTimeout(function(){h.className+=' pronto'},1500)}})();</script>
-<link rel="stylesheet" href="estilo.css?v=20261116d">
+<link rel="stylesheet" href="estilo.css?v=20261117a">
 </head>
 <body>
 
@@ -199,18 +199,19 @@ window.IDIOMA=l;window.IDIOMA_ESCOLHIDO=e;if(l!=='pt'){var h=document.documentEl
       <span data-en="São Nicolau by">São Nicolau por</span> <a href="https://commons.wikimedia.org/wiki/File:Ruinas_sao_nicolau3.jpg" target="_blank" rel="noopener">Felipe Pretto</a>;
       <span data-en="San Ignacio Miní by">San Ignacio Miní por</span> <a href="https://commons.wikimedia.org/wiki/File:Ruins_of_San_Ignacio_Min%C3%AD_-_Church.jpg" target="_blank" rel="noopener">Fernando</a>;
       <span data-es="Plaza Pinheiro Machado, en Santo Ângelo, por" data-en="Pinheiro Machado Square, in Santo Ângelo, by">Praça Pinheiro Machado, em Santo Ângelo, por</span> <a href="https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_Pinheiro_Machado_Santo_Angelo.jpg" target="_blank" rel="noopener">Felipe P</a>;
+      <span data-es="Monumento a Cenair Maicá por" data-en="Cenair Maicá Monument by">Monumento a Cenair Maicá por</span> <a href="https://commons.wikimedia.org/wiki/File:Monumento_Cenair_Maic%C3%A1.jpg" target="_blank" rel="noopener">Felipe P</a>;
       <span data-en="São Luiz Gonzaga Cathedral by">Catedral de São Luiz Gonzaga por</span> <a href="https://commons.wikimedia.org/wiki/File:Cathedral_Basilica_S%C3%A3o_Luiz_Gonzaga,_%D1%81ampan%C3%A1rio.jpg" target="_blank" rel="noopener">NoseySilverFox</a>
-      (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" target="_blank" rel="noopener">CC BY-SA 4.0</a>);
-      <span data-es="iglesia de noche por" data-en="church at night by">igreja à noite por</span> <a href="https://commons.wikimedia.org/wiki/File:Igreja_jesu%C3%ADtica_a_noite_em_S%C3%A3o_Miguel_das_Miss%C3%B5es,_RS.jpg" target="_blank" rel="noopener">Herr stahlhoefer</a> <span data-es="(dominio público). Las demás fotos: archivo de la Pousada das Missões." data-en="(public domain). All other photos: Pousada das Missões archive.">(domínio público). Demais fotos: acervo da Pousada das Missões.</span></p>
+      (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br" target="_blank" rel="noopener">CC BY-SA 4.0</a>).
+      <span data-es="Las demás fotos: archivo de la Pousada das Missões." data-en="All other photos: Pousada das Missões archive.">Demais fotos: acervo da Pousada das Missões.</span></p>
     <p class="rodape-idiomas"><a class="js-idioma" data-lang="pt" lang="pt-BR" hreflang="pt-BR">Português</a> &nbsp;·&nbsp; <a class="js-idioma" data-lang="es" lang="es" hreflang="es">Español</a> &nbsp;·&nbsp; <a class="js-idioma" data-lang="en" lang="en" hreflang="en">English</a></p>
     <p class="assinatura"><span data-es="Sitio desarrollado por" data-en="Website by">Site desenvolvido por</span> <a href="https://wa.me/5555991011436?text=Ol%C3%A1%20Pedro!%20Vi%20o%20site%20da%20Pousada%20das%20Miss%C3%B5es." target="_blank" rel="noopener">Pedro Munareto</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/pedro_munaretto/" target="_blank" rel="noopener">@pedro_munaretto</a> &nbsp;·&nbsp; <span data-es="Gestión de Instagram y tráfico pago" data-en="Instagram management and paid ads">Gestão de Instagram e tráfego pago</span></p>
   </div>
 </footer>
 <div class="faixa faixa-base" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
 
-<script src="roteiros.js?v=20261116d"></script>
-<script src="es.js?v=20261116d"></script>
-<script src="en.js?v=20261116d"></script>
-<script src="app.js?v=20261116d"></script>
+<script src="roteiros.js?v=20261117a"></script>
+<script src="es.js?v=20261117a"></script>
+<script src="en.js?v=20261117a"></script>
+<script src="app.js?v=20261117a"></script>
 </body>
 </html>

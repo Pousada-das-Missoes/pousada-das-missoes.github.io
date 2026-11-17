@@ -42,11 +42,11 @@ const ESPACOS = [
       { f: 'img/pousada/cafe-a.jpg', leg: 'Bolos, pães caseiros e folhados do café da manhã' },
       { f: 'img/pousada/piq-1.jpg', leg: 'Piquenique no jardim da pousada' },
       { f: 'img/pousada/cafe-b.jpg', leg: 'Bolos e pães caseiros' },
-      { f: 'img/pousada/cafe-1.jpg', leg: 'Mesa do café da manhã' },
+      { f: 'img/pousada/cafe-favo.jpg', leg: 'Favo de mel no café da manhã' },
       { f: 'img/pousada/piq-2.jpg', leg: 'Piquenique entre os apartamentos' },
-      { f: 'img/pousada/cafe-c.jpg', leg: 'Mesa posta no salão' },
+      { f: 'img/pousada/cafe-frutas.jpg', leg: 'Frutas, manteiga, geleias e mel' },
       { f: 'img/pousada/piq-3.jpg', leg: 'Piquenique a dois no gramado' },
-      { f: 'img/pousada/cafe-d.jpg', leg: 'Sucos, leite e café' },
+      { f: 'img/pousada/cafe-paes.jpg', leg: 'Pães e bolos no salão do café' },
       { f: 'img/pousada/piq-4.jpg', leg: 'Cesta de piquenique' }
     ]
   },

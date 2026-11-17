@@ -51,7 +51,7 @@ const PONTOS = [
     fotos: [['img/lugares/aldeia.jpg', 'Casa tradicional na aldeia', 'Casa tradicional en la aldea', 'Traditional house in the village']] },
   { id: 'benzedores', mapa: '', grupo: 'sm',
     titulo: ['Visita aos benzedores', 'Visita a los benzedores', 'Visit to the benzedores'],
-    fotos: [['img/lugares/benzedores.jpg', 'Dona Alzira benzendo', 'Doña Alzira dando una bendición', 'Dona Alzira giving a blessing']] },
+    fotos: [['img/lugares/benzedores.jpg', 'Benzedura em frente ao Patrimônio Mundial', 'Bendición frente al Patrimonio Mundial', 'A blessing in front of the World Heritage Site']] },
   { id: 'antimon', mapa: 'Antimonumento ao Bandeirante, São Miguel das Missões, RS', grupo: 'sm',
     titulo: ['Antimonumento ao Bandeirante', 'Antimonumento al Bandeirante', 'Anti-Monument to the Bandeirante'],
     fotos: [['img/lugares/antimon.jpg', 'A cabeça do bandeirante afundada no chão', 'La cabeza del bandeirante hundida en el suelo', 'The bandeirante’s head sunk into the ground']] },
@@ -70,7 +70,7 @@ const PONTOS = [
     titulo: ['Catedral Angelopolitana', 'Catedral Angelopolitana', 'Angelopolitana Cathedral'],
     fotos: [
       ['img/lugares/catedral.jpg', 'Catedral Angelopolitana, em Santo Ângelo', 'Catedral Angelopolitana, en Santo Ângelo', 'Angelopolitana Cathedral, in Santo Ângelo'],
-      ['img/lugares/stoangelo.jpg', 'Praça Pinheiro Machado, com a Catedral ao fundo', 'Plaza Pinheiro Machado, con la Catedral al fondo', 'Pinheiro Machado Square, with the Cathedral in the background']
+      ['img/pontos/catedral-2.jpg', 'Praça Pinheiro Machado, com a Catedral ao fundo', 'Plaza Pinheiro Machado, con la Catedral al fondo', 'Pinheiro Machado Square, with the Cathedral in the background']
     ] },
   { id: 'saojoao', mapa: 'Sítio Arqueológico de São João Batista, Entre-Ijuís, RS', grupo: 'regiao',
     titulo: ['Sítio de São João Batista', 'Sitio de São João Batista', 'São João Batista Site'],
