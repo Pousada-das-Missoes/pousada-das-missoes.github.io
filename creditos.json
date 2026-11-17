@@ -36,9 +36,46 @@
   },
   {
     "arquivo": "pontos/catedral-2.jpg",
-    "autor": "Felipe P",
+    "autor": "Ricardo630",
+    "licenca": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Catedral_Angelopolitana2.jpg"
+  },
+  {
+    "arquivo": "lugares/someluz2.jpg",
+    "autor": "Halley Pacheco de Oliveira",
+    "licenca": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADtio_Arqueol%C3%B3gico_de_S%C3%A3o_Miguel_Arcanjo_29.jpg"
+  },
+  {
+    "arquivo": "lugares/saojoao.jpg",
+    "autor": "Halley Pacheco de Oliveira",
+    "licenca": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADtio_Arqueol%C3%B3gico_de_S%C3%A3o_Jo%C3%A3o_Batista_02.jpg",
+    "obs": "recortada em 3:2"
+  },
+  {
+    "arquivo": "pontos/saojoao-2.jpg",
+    "autor": "Halley Pacheco de Oliveira",
+    "licenca": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADtio_Arqueol%C3%B3gico_de_S%C3%A3o_Jo%C3%A3o_Batista_03.jpg"
+  },
+  {
+    "arquivo": "pontos/saojoao-3.jpg",
+    "autor": "Halley Pacheco de Oliveira",
+    "licenca": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:S%C3%ADtio_Arqueol%C3%B3gico_de_S%C3%A3o_Jo%C3%A3o_Batista_08.jpg"
+  },
+  {
+    "arquivo": "pontos/saonic-2.jpg",
+    "autor": "Felipe Pretto",
     "licenca": "CC BY-SA 4.0",
-    "url": "https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_Pinheiro_Machado_Santo_Angelo.jpg"
+    "url": "https://commons.wikimedia.org/wiki/File:Ruinas_sao_nicolau1.jpg"
+  },
+  {
+    "arquivo": "pontos/saonic-3.jpg",
+    "autor": "Felipe Pretto",
+    "licenca": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Ruinas_sao_nicolau2.jpg"
   },
   {
     "arquivo": "lugares/saoluiz.jpg",

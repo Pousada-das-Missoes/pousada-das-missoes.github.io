@@ -256,7 +256,7 @@
         titulo: (p.titulo && (p.titulo[n] || p.titulo[0])) || l.t,
         rotulo: onde(l.o), texto: l.d, c: l.c,
         itens: (p.itens || []).map(function (i) { return i[n] || i[0]; }),
-        fotos: p.fotos.map(function (f) { return { f: f[0], leg: f[n + 1] || f[1] }; }),
+        fotos: p.fotos.map(function (f) { return { f: f[0], leg: f[n + 1] || f[1], pos: f[4] }; }),
         roteiros: ROTEIROS.filter(function (r) {
           return r.dias_.some(function (d) { return periodos.some(function (q) { return D[d][q[0]].indexOf(p.id) >= 0; }); });
         }).map(function (r) { return r.dias; })
@@ -291,7 +291,7 @@
       e.fotos.forEach(function (f) { lista.push({ src: comV(f.f), leg: f.leg || e.titulo, sec: e.titulo }); });
       var gal = e.fotos.map(function (f, j) {
         return '<button type="button" class="gal-item' + (j === 0 ? ' gal-grande' : '') + '" data-i="' + (ini + j) + '" aria-label="' + U.ampliar + esc(f.leg || e.titulo) + '">' +
-          '<img loading="lazy" src="' + esc(comV(f.f)) + '" alt="' + esc(f.leg || e.titulo) + '"></button>';
+          '<img loading="lazy" src="' + esc(comV(f.f)) + '" alt="' + esc(f.leg || e.titulo) + '"' + (f.pos ? ' style="object-position:' + esc(f.pos) + '"' : '') + '></button>';
       }).join('');
       return '<section class="espaco' + (k % 2 ? ' espaco-alt' : '') + '" id="' + e.id + '">' +
         '<div class="espaco-cab">' +

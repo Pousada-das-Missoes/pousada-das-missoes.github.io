@@ -3,6 +3,7 @@
   O texto e a cidade de cada ponto vem do roteiros.js (L), pelo mesmo id. Assim, mudou o texto la, muda aqui tambem.
   Aqui ficam: grupo ('sm' = em Sao Miguel, 'regiao' = pela regiao), nome na pagina [portugues, espanhol, ingles],
   etiquetas (itens) e fotos [arquivo, legenda em portugues, legenda em espanhol, legenda em ingles]. A primeira foto abre a galeria.
+  Quinto item opcional da foto = ponto de corte na galeria (ex.: '35% 10%' = um pouco para a esquerda e perto do topo).
   capa = foto da capa rotativa do topo (horizontal e grande); sem capa, usa a primeira foto.
   Galeria fecha certinho com 1, 2, 3, 5 ou 9 fotos.
   mapa = busca do Google Maps para o alfinete "Ver no mapa" (conferida em 12/11/2026). '' = sem alfinete
@@ -32,7 +33,7 @@ const PONTOS = [
     itens: [['À noite', 'De noche', 'At night']],
     fotos: [
       ['img/lugares/someluz.jpg', 'Som e Luz na fachada da igreja', 'Luz y Sonido sobre la fachada de la iglesia', 'Sound and Light on the church façade'],
-      ['img/lugares/someluz2.jpg', 'A igreja iluminada à noite', 'La iglesia iluminada de noche', 'The church lit up at night']
+      ['img/lugares/someluz2.jpg', 'A igreja iluminada à noite', 'La iglesia iluminada de noche', 'The church lit up at night', '24% 50%']
     ] },
   { id: 'fonte', mapa: 'Fonte Missioneira, São Miguel das Missões, RS', grupo: 'sm',
     titulo: ['Fonte Missioneira', 'Fuente Misionera', 'Mission Fountain'],
@@ -74,19 +75,23 @@ const PONTOS = [
     titulo: ['Catedral Angelopolitana', 'Catedral Angelopolitana', 'Angelopolitana Cathedral'],
     fotos: [
       ['img/lugares/catedral.jpg', 'Catedral Angelopolitana, em Santo Ângelo', 'Catedral Angelopolitana, en Santo Ângelo', 'Angelopolitana Cathedral, in Santo Ângelo'],
-      ['img/pontos/catedral-2.jpg', 'Praça Pinheiro Machado, com a Catedral ao fundo', 'Plaza Pinheiro Machado, con la Catedral al fondo', 'Pinheiro Machado Square, with the Cathedral in the background']
+      ['img/pontos/catedral-2.jpg', 'As torres da catedral', 'Las torres de la catedral', 'The cathedral towers', '35% 8%']
     ] },
   { id: 'saojoao', mapa: 'Sítio Arqueológico de São João Batista, Entre-Ijuís, RS', grupo: 'regiao',
     titulo: ['Sítio de São João Batista', 'Sitio de São João Batista', 'São João Batista Site'],
     itens: [['Sítio arqueológico', 'Sitio arqueológico', 'Archaeological site']],
     fotos: [
       ['img/lugares/saojoao.jpg', 'Painel em relevo no sítio', 'Panel en relieve en el sitio', 'Relief panel at the site'],
-      ['img/pontos/saojoao-2.jpg', 'O sítio entre as árvores', 'El sitio entre los árboles', 'The site among the trees'],
-      ['img/pontos/saojoao-3.jpg', 'Detalhe do relevo esculpido', 'Detalle del relieve tallado', 'Detail of the carved relief']
+      ['img/pontos/saojoao-2.jpg', 'Muros de pedra da antiga redução', 'Muros de piedra de la antigua reducción', 'Stone walls of the old reduction'],
+      ['img/pontos/saojoao-3.jpg', 'Paredes de pedra entre as árvores', 'Paredes de piedra entre los árboles', 'Stone walls among the trees']
     ] },
   { id: 'saonic', mapa: 'Sítio Arqueológico de São Nicolau, São Nicolau, RS', grupo: 'regiao',
     titulo: ['São Nicolau', 'São Nicolau', 'São Nicolau'],
-    fotos: [['img/lugares/saonic.jpg', 'Sítio de São Nicolau', 'Sitio de São Nicolau', 'São Nicolau site']] },
+    fotos: [
+      ['img/lugares/saonic.jpg', 'Sítio de São Nicolau', 'Sitio de São Nicolau', 'São Nicolau site'],
+      ['img/pontos/saonic-2.jpg', 'As paredes de pedra do sítio', 'Las paredes de piedra del sitio', 'The stone walls of the site'],
+      ['img/pontos/saonic-3.jpg', 'O sítio entre as árvores', 'El sitio entre los árboles', 'The site among the trees']
+    ] },
   { id: 'saoluiz', mapa: 'Igreja Matriz de São Luiz Gonzaga, São Luiz Gonzaga, RS', grupo: 'regiao',
     titulo: ['São Luiz Gonzaga', 'São Luiz Gonzaga', 'São Luiz Gonzaga'],
     fotos: [['img/lugares/saoluiz.jpg', 'Catedral de São Luiz Gonzaga', 'Catedral de São Luiz Gonzaga', 'São Luiz Gonzaga Cathedral']] },
