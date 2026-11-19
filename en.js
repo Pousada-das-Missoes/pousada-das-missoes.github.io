@@ -45,7 +45,7 @@ const EN = {
     fonte:      { t: 'Mission Fountain', d: 'A stone fountain from the time of the reductions, one of the loveliest corners of town.' },
     praca:      { t: 'Square and town center', d: 'A walk around downtown São Miguel, with time for a coffee and the little shops.' },
     irmaica:    { t: 'Cenair Maicá Square', d: 'The square with the statue of nativist singer and songwriter Cenair Maicá, one of the great names of Missions music, guitar in hand.' },
-    antimon:    { t: 'Anti-Monument to the Bandeirante', d: 'The head of a bandeirante sunk into the ground: a work that turns the idea of a monument upside down and invites you to see the history of the Missions through the eyes of those who lived here.' },
+    antimon:    { t: 'Anti-Monument to the Bandeirante', d: 'The head of a bandeirante sunk into the ground. Bandeirantes raided the reductions to capture Guarani people, and this work turns the idea of a monument upside down: instead of raising up the attacker, it sinks him. A way of telling the story of the Missions through the eyes of those who lived here.' },
     borraio:    { t: 'Borraio Minhas Origens', d: 'A rustic shed full of old objects, tools and keepsakes that tell the story of where the families of the region came from.' },
     jantar:     { t: 'Dinner in town', d: 'The inn does not serve dinner, but will tell you where to eat well in São Miguel.' },
     caaro:      { t: 'Caaró Sanctuary, in Caibaté', d: 'A place of faith linked to the martyrs of the Missions, with the sanctuary and the woods around it.' },

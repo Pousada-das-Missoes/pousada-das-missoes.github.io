@@ -43,7 +43,7 @@ const ES = {
     fonte:      { t: 'Fuente Misionera', d: 'Fuente de piedra de la época de las reducciones, uno de los rincones más lindos de la ciudad.' },
     praca:      { t: 'Plaza y centro de la ciudad', d: 'Paseo a pie por el centro de São Miguel, con tiempo para un café y para recorrer las tiendas.' },
     irmaica:    { t: 'Plaza Cenair Maicá', d: 'La plaza con la estatua del cantor y compositor nativista Cenair Maicá, uno de los nombres de la música misionera, con la guitarra en las manos.' },
-    antimon:    { t: 'Antimonumento al Bandeirante', d: 'La cabeza de un bandeirante hundida en el suelo: una obra que invierte la idea de monumento y hace pensar la historia de las Misiones desde la mirada de quienes vivieron acá.' },
+    antimon:    { t: 'Antimonumento al Bandeirante', d: 'La cabeza de un bandeirante hundida en el suelo. Los bandeirantes atacaban las reducciones para capturar guaraníes, y esta obra da vuelta la idea de monumento: en vez de levantar a quien atacó, lo hunde. Una forma de contar la historia de las Misiones desde la mirada de quienes vivieron acá.' },
     borraio:    { t: 'Borraio Minhas Origens', d: 'Galpón rústico con objetos antiguos, herramientas y recuerdos que cuentan los orígenes de las familias de la región.' },
     jantar:     { t: 'Cena en la ciudad', d: 'La posada no sirve cena, pero te indica dónde comer bien en São Miguel.' },
     caaro:      { t: 'Santuario de Caaró, en Caibaté', d: 'Lugar de fe ligado a los mártires de las Misiones, con el santuario y el monte alrededor.' },
