@@ -12,7 +12,7 @@ A pousada sugere; não vende pacote nem roteiro.
 - `pontos.html`: pontos turísticos.
 - `pousada.html`: só redireciona para a página inicial (endereço antigo da pousada, para link já compartilhado não quebrar).
 
-No ar (GitHub Pages): https://pedronicolasmm-coder.github.io/pousada-roteiros/
+No ar (GitHub Pages): https://pousada-das-missoes.github.io/
 
 ## Como editar
 
