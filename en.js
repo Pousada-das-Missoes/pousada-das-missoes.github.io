@@ -57,7 +57,7 @@ const EN = {
     saonic:     { t: 'São Nicolau', d: 'One of the Seven Peoples, with an archaeological site and the Uruguay River landscape nearby.' },
     saoluiz:    { t: 'São Luiz Gonzaga', d: 'Another of the Seven Peoples, with the memory of the Missions in the town center.' },
     detalhes:   { t: 'The site, slowly', d: 'A second visit to the World Heritage Site to see what usually goes unnoticed: the sundial, the priests’ orchard and the paths of the reductions.' },
-    cotiguacu:  { t: 'Cotiguaçu', d: 'Description coming soon.' },
+    cotiguacu:  { t: 'Cotiguaçu', d: 'The remains of the house where the reduction’s widows and orphaned girls lived, a part of the site’s history that often goes unnoticed.' },
     livre:      { t: 'Free evening', d: 'For a relaxed dinner in town or an evening in at the inn.' },
     argentina:  { t: 'San Ignacio Miní, in Argentina', d: 'Across the Uruguay River, another Jesuit reduction recognized by UNESCO.' },
     caminho:    { t: 'Or: a stretch of the Caminho das Missões', d: 'For those who enjoy walking, a stretch of the trail on foot between the old mission towns.' }

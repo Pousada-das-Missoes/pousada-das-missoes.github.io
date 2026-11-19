@@ -17,10 +17,10 @@ No ar (GitHub Pages): https://pedronicolasmm-coder.github.io/pousada-roteiros/
 ## Como editar
 
 - **Textos dos roteiros:** `roteiros.js`. Cada lugar tem nome (`t`), descrição (`d`) e, quando falta confirmar, `c`.
-- **Etiquetas "a confirmar":** aparecem enquanto `RASCUNHO = true` no topo de `roteiros.js`. Depois da aprovação, trocar para `false`.
+- **Etiquetas "a confirmar":** só aparecem com `RASCUNHO = true` no topo de `roteiros.js`. Desde 19/11/2026 está `false` (site publicado); os campos `c` ficaram como lembrete do que conferir com a pousada.
 - **Cidade de cada lugar:** campo `o` em `roteiros.js` (aparece na legenda da foto e conta as cidades de cada roteiro).
 - **Como chegar:** bloco no `roteiros.html` com mapa do Google e tempos de viagem marcados "a confirmar" (a página inicial tem o bloco "Onde fica a pousada").
-- **Google:** as páginas estão com `noindex` (rascunho). Tirar essa linha do `index.html`, `roteiros.html`, `roteiro.html` e `pontos.html` quando aprovar.
+- **Google:** liberado em 19/11/2026 (o `noindex` saiu do `index.html`, `roteiros.html`, `roteiro.html` e `pontos.html`). Só o `pousada.html` (redirecionamento) e o `previa.html` continuam fora do Google.
 
 ## Fotos
 

@@ -493,12 +493,14 @@ body.final .conf { display: none; }
   .lb-fechar { top: 14px; right: 14px; }
 }
 
-/* escala de 80% no computador (pedido do Pedro: "como se a pagina estivesse com 80%").
-   Com zoom, 100vh vira 80% da tela; por isso as alturas de tela cheia vao divididas por .8 */
+/* escala de 75% no computador (Pedro: "como se a pagina estivesse com 80%"; em 18/11/2026: "da pra tirar um
+   pouquinho mais o zoom", entao 75%, o passo seguinte do zoom do navegador).
+   Com zoom, 100vh vira 75% da tela; por isso as alturas de tela cheia vao divididas por .75 */
 @media (min-width: 1024px) {
-  html { zoom: .8; }
-  .hero { min-height: clamp(640px, 125vh, 1200px); min-height: clamp(640px, 125svh, 1200px); }
-  .rot-hero { min-height: clamp(560px, 102.5vh, 1025px); min-height: clamp(560px, 102.5svh, 1025px); }
+  html { zoom: .75; }
+  .hero { min-height: clamp(640px, 133.33vh, 1280px); min-height: clamp(640px, 133.33svh, 1280px); }
+  .rot-hero { min-height: clamp(560px, 109.33vh, 1093px); min-height: clamp(560px, 109.33svh, 1093px); }
+  .lb-fig img { max-height: calc(133.33vh - 140px); }
 }
 .pousada-ver { text-align: center; margin-top: 56px; }
 @media (max-width: 760px) {

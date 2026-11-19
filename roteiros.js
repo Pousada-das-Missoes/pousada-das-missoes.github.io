@@ -1,10 +1,11 @@
 /*
   TEXTOS DOS ROTEIROS
   Edite aqui. Cada lugar tem: t = nome, o = cidade (aparece na foto), d = descricao, c = observacao "a confirmar"
-  (aparece como etiqueta enquanto RASCUNHO = true). Quando os donos aprovarem,
-  apague o campo c e troque RASCUNHO para false.
+  (so aparece como etiqueta se RASCUNHO = true).
+  19/11/2026: Pedro mandou confirmar tudo e publicar ("se tiver que mudar alguma coisa, a gente muda").
+  RASCUNHO = false esconde as etiquetas; os campos c ficaram so como lembrete do que ainda vale conferir com a pousada.
 */
-const RASCUNHO = true;
+const RASCUNHO = false;
 
 const L = {
   sitio:     { t: "Patrimônio Mundial de São Miguel Arcanjo", o: "São Miguel das Missões", d: "Caminhada pelo sítio arqueológico reconhecido pela UNESCO: a igreja, a praça das reduções e os detalhes da pedra trabalhada pelos guaranis." },
@@ -30,7 +31,7 @@ const L = {
   saonic:    { t: "São Nicolau", o: "São Nicolau", d: "Um dos Sete Povos, com sítio arqueológico e paisagem do Rio Uruguai na região.", c: "Confirmar o que está aberto para visitação." },
   saoluiz:   { t: "São Luiz Gonzaga", o: "São Luiz Gonzaga", d: "Mais um dos Sete Povos, com memória missioneira no centro da cidade.", c: "Confirmar o que a pousada indica visitar." },
   detalhes:  { t: "O sítio com calma", o: "São Miguel das Missões", d: "Segunda visita ao Patrimônio Mundial para ver o que passa despercebido: relógio de sol, a quinta dos padres e os caminhos das reduções.", c: "Confirmar os pontos com o Zé." },
-  cotiguacu: { t: "Cotiguaçu", o: "Região das Missões", d: "Texto a definir com a pousada.", c: "Confirmar o que é e como visitar." },
+  cotiguacu: { t: "Cotiguaçu", o: "São Miguel das Missões", d: "Os vestígios da casa onde viviam as viúvas e as órfãs da redução, um pedaço da história do sítio que costuma passar despercebido.", c: "Conferir com o Zé o texto e se o Cotiguaçu fica aberto para visitação." },
   livre:     { t: "Noite livre", o: "Pousada das Missões", d: "Para jantar com calma na cidade ou ficar na pousada." },
   argentina: { t: "San Ignacio Miní, na Argentina", o: "San Ignacio, Argentina", d: "Do outro lado do Rio Uruguai, outra redução jesuítica reconhecida pela UNESCO.", c: "Confirmar travessia, documentos e se a pousada quer sugerir este passeio." },
   caminho:   { t: "Ou: um trecho do Caminho das Missões", o: "Região das Missões", d: "Para quem gosta de caminhar, um pedaço da rota a pé entre os antigos povos.", c: "Confirmar como indicar este passeio." }

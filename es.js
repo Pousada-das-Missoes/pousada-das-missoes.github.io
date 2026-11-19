@@ -55,7 +55,7 @@ const ES = {
     saonic:     { t: 'São Nicolau', d: 'Uno de los Siete Pueblos, con sitio arqueológico y el paisaje del río Uruguay en la región.' },
     saoluiz:    { t: 'São Luiz Gonzaga', d: 'Otro de los Siete Pueblos, con memoria misionera en el centro de la ciudad.' },
     detalhes:   { t: 'El sitio con calma', d: 'Segunda visita al Patrimonio Mundial para ver lo que pasa desapercibido: el reloj de sol, la quinta de los padres y los caminos de las reducciones.' },
-    cotiguacu:  { t: 'Cotiguaçu', d: 'Texto a definir con la posada.' },
+    cotiguacu:  { t: 'Cotiguaçu', d: 'Los vestigios de la casa donde vivían las viudas y las huérfanas de la reducción, una parte de la historia del sitio que suele pasar desapercibida.' },
     livre:      { t: 'Noche libre', d: 'Para cenar con calma en la ciudad o quedarse en la posada.' },
     argentina:  { t: 'San Ignacio Miní, en Argentina', d: 'Del otro lado del río Uruguay, otra reducción jesuítica reconocida por la UNESCO.' },
     caminho:    { t: 'O: un tramo del Camino de las Misiones', d: 'Para quienes disfrutan caminar, un tramo de la ruta a pie entre los antiguos pueblos.' }
